@@ -1,14 +1,13 @@
 import sbt._
 import Settings._
 
-lazy val domain = project
+lazy val `domain` = project
   .settings(commonSettings)
   .settings(libraryDependencies ++= domainDependencies)
 
-lazy val service = project
+lazy val `service` = project
   .settings(commonSettings)
   .settings(libraryDependencies ++= serviceDependencies)
-  .dependsOn(domain)
 
 lazy val `factor-miner` = Project("factor-miner",  file("."))
   .settings(commonSettings)

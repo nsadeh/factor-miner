@@ -8,7 +8,8 @@ object Settings {
   )
 
   val domainDependencies = Seq(
-    akkaHttp
+    akkaHttp,
+    quartz
   )
 
   val serviceDependencies = Seq(
