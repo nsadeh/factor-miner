@@ -8,6 +8,7 @@ lazy val `domain` = project
 lazy val `service` = project
   .settings(commonSettings)
   .settings(libraryDependencies ++= serviceDependencies)
+  .dependsOn(domain)
 
 lazy val `factor-miner` = Project("factor-miner",  file("."))
   .settings(commonSettings)
