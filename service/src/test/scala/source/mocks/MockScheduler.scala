@@ -58,6 +58,5 @@ sealed trait ScheduledTask extends Ordered[ScheduledTask] {
       else 0
   }
 
-  case class ScheduledOnceTask(delay: FiniteDuration, id: Long, runnable: Runnable) extends ScheduledTask
-  case class RepeatingTask(delay: FiniteDuration, id: Long, runnable: Runnable, interval: FiniteDuration) extends ScheduledTask
-  
+case class ScheduledOnceTask(delay: FiniteDuration, id: Long, runnable: Runnable) extends ScheduledTask
+case class RepeatingTask(delay: FiniteDuration, id: Long, runnable: Runnable, interval: FiniteDuration) extends ScheduledTask
