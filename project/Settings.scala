@@ -16,6 +16,8 @@ object Settings {
       akka,
       akkaHttp,
       akkaStreams,
-      akkaStreamsTest
+      akkaStreamsTest,
+      scalaTest,
+      scalaTestPlus
     )
 }
